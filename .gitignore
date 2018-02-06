@@ -1,3 +1,4 @@
 **/config.yml
 .vscode
 node_modules
+**/.env

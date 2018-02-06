@@ -1,9 +1,8 @@
 const MongoClient = require('mongodb').MongoClient
-const config = require('../config')
 
 const db = async () => {
-  const client = await MongoClient.connect(config.db.uri)
-  return client.db(config.db.dbName).collection('todos')
+  const client = await MongoClient.connect(process.env.DB_URI)
+  return client.db(process.env.DB_NAME).collection('todos')
 }
 
 const todoService = {

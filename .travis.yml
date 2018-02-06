@@ -10,6 +10,6 @@ cache:
     - "node_modules"
 
 after_success:
-  - docker build --tag ivandelabeldad/configuration:1.0.0 .
+  - docker build --tag ivandelabeldad/private:1.0.0 .
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - docker push ivandelabeldad/configuration:1.0.0
+  - docker push ivandelabeldad/private:1.0.0
