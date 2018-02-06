@@ -7,7 +7,7 @@
     "start": "node src/main.js",
     "watch": "nodemon src/main.js",
     "deploy": "echo \"Not impletemented\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Ivan de la Beldad Fernandez <ivandelabeldad@gmail.com",
   "license": "MIT",
@@ -19,6 +19,7 @@
     "mongodb": "^3.0.2"
   },
   "devDependencies": {
+    "jest": "^22.1.4",
     "nodemon": "^1.14.12",
     "standard": "^10.0.3"
   }
