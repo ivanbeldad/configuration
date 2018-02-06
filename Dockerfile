@@ -8,10 +8,10 @@ WORKDIR /app
 
 RUN npm install --production
 
-ENV DB_URI=${DB_URI}
-ENV DB_NAME=${DB_NAME}
-ENV PORT=${PORT}
+ENV DB_URI=$DB_URI
+ENV DB_NAME=$DB_NAME
+ENV PORT=$PORT
 
-EXPOSE ${PORT}
+EXPOSE $PORT
 
 CMD [ "npm", "start" ]
