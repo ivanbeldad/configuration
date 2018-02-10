@@ -8,8 +8,6 @@ WORKDIR /app
 
 RUN npm install --production
 
-ARG PORT
-
-EXPOSE $PORT
+EXPOSE 3000
 
 CMD [ "npm", "start" ]
