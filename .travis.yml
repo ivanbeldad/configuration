@@ -11,5 +11,5 @@ cache:
 
 after_success:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - docker build . --tag "ivandelabeldad/private:1.0.0"
-  - docker push "ivandelabeldad/private:1.0.0"
+  - docker build . --tag ivandelabeldad/configuration
+  - docker push ivandelabeldad/configuration
