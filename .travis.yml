@@ -9,7 +9,7 @@ cache:
   directories:
     - "node_modules"
 
-after_success:
-  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - docker build . --tag ivandelabeldad/configuration
-  - docker push ivandelabeldad/configuration
+# after_success:
+#   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+#   - docker build . --tag ivandelabeldad/configuration
+#   - docker push ivandelabeldad/configuration
